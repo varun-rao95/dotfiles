@@ -1,5 +1,6 @@
 # for tmux ctrl + k to work
 bindkey \^K kill-line
+WORDCHARS=""
 
 alias gbr='git branch'
 alias gcm='git commit'
