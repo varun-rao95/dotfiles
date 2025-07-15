@@ -13,7 +13,12 @@ alias glo='git log --oneline -n 5'
 alias glo1='git log --oneline -n '
 gsn() {git stash apply stash^{/"$1"} }
 
+# brew install gh
 alias gh='EDITOR=vim gh'
+
+# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# ~/.fzf/install
+# Use uninstall script to remove fzf.
 gco() {
   if [[ $# -eq 0 ]]; then
     git checkout $(git branch --list | fzf)
